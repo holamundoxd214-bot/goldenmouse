@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/black" android:paddingTop="@dimen/_1sdp" android:paddingBottom="@dimen/_1sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/_3sdp" android:paddingEnd="@dimen/_3sdp">
+        <TextView android:textSize="@dimen/_9sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fps" android:fontFamily="@font/sf_pro_semibold" android:letterSpacing="0.3" android:textFontWeight="800" />
+        <TextView android:textSize="@dimen/_9sdp" android:textColor="@color/white" android:id="@id/emulator_fps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_201" android:fontFamily="@font/sf_pro_semibold" android:layout_marginStart="@dimen/_6sdp" android:letterSpacing="0.3" android:textFontWeight="800" />
+    </LinearLayout>
+</LinearLayout>

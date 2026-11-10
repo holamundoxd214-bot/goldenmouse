@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/panelConfigurarVista" android:background="@drawable/bg_vista_premium_panel" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clipToOutline="true">
+        <requestFocus />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_gamer_header" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <View android:layout_gravity="start|center" android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="24.0dip" android:layout_marginStart="15.0dip" />
+                <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="CONFIGURAR VISTA" android:letterSpacing="0.09" />
+                <View android:layout_gravity="end|center" android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="24.0dip" android:layout_marginEnd="15.0dip" />
+            </FrameLayout>
+            <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <ScrollView android:id="@id/scrollConfigurarVista" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="false" android:layout_weight="1.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:paddingTop="14.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_vista_premium_card" android:paddingTop="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0dip">
+                        <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="16.0dip" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UBICACIÓN BÁSICA" android:layout_marginStart="9.0dip" android:letterSpacing="0.11" />
+                        <View android:background="#ff50441e" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="6.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Posición X" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editPosicionX" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="0" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberSigned" />
+                    </LinearLayout>
+                    <View android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Posición Y" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editPosicionY" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="0" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberSigned" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_vista_premium_card" android:paddingTop="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0dip">
+                        <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="16.0dip" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SENSIBILIDAD" android:layout_marginStart="9.0dip" android:letterSpacing="0.11" />
+                        <View android:background="#ff50441e" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_marginTop="6.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Golden Precision+" />
+                            <TextView android:textSize="9.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Opcion Experimental de Free Fire." />
+                        </LinearLayout>
+                        <Switch android:id="@id/switchGoldenPrecisionPlus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="0.72" android:scaleY="0.72" android:thumbTint="@color/switch_thumb" android:trackTint="@color/switch_track" />
+                    </LinearLayout>
+                    <View android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="6.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sensibilidad Horizontal (X)" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editSensibilidadX" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="1.00" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberDecimal" />
+                    </LinearLayout>
+                    <View android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sensibilidad Vertical (Y)" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editSensibilidadY" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="1.00" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberDecimal" />
+                    </LinearLayout>
+                    <View android:background="#ff3a321e" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="62.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sensibilidad de Mira (Sniper)" />
+                            <TextView android:textSize="9.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Sensibilidad especial al apuntar" />
+                        </LinearLayout>
+                        <Switch android:id="@id/switchSensibilidadSniper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="0.72" android:scaleY="0.72" android:thumbTint="@color/switch_thumb" android:trackTint="@color/switch_track" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/groupSniper" android:background="@drawable/bg_vista_premium_nested" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="4.0dip" android:paddingStart="10.0dip" android:paddingEnd="2.0dip" android:layout_marginStart="8.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffdddddd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Tecla de Activación" android:layout_weight="1.0" />
+                            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnTeclaSniper" android:background="@drawable/bg_vista_premium_key" android:focusable="true" android:clickable="true" android:layout_width="120.0dip" android:layout_height="36.0dip" android:text="MOUSE_RIGHT" />
+                        </LinearLayout>
+                        <View android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffdddddd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Multiplicador" android:layout_weight="1.0" />
+                            <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editMultiplicadorSniper" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="1.00" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberDecimal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_vista_premium_card" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0dip">
+                        <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="16.0dip" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="COMPORTAMIENTO DEL CURSOR" android:layout_marginStart="9.0dip" android:letterSpacing="0.07" />
+                        <View android:background="#ff50441e" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="6.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cambio rápido del cursor" />
+                            <TextView android:textSize="9.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Alternar con una sola tecla" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnTeclaCambioRapido" android:background="@drawable/bg_vista_premium_key" android:focusable="true" android:clickable="true" android:layout_width="118.0dip" android:layout_height="38.0dip" android:text="SIN ASIGNAR" />
+                    </LinearLayout>
+                    <View android:background="#ff3a321e" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tiempo de cambio" />
+                            <TextView android:textSize="9.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Retardo antes de alternar" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="38.0dip">
+                            <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/editTiempoCambioCursor" android:background="@null" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="0.00" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberDecimal" />
+                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff888888" android:gravity="center" android:layout_width="24.0dip" android:layout_height="fill_parent" android:text="s" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <SeekBar android:id="@id/seekTiempoCambioCursor" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="4.0dip" android:max="50" android:progress="0" android:progressTint="#ffffd21a" android:progressBackgroundTint="#ff3a3a3a" android:thumbTint="#ffffd21a" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="23.0dip">
+                        <TextView android:textSize="9.0sp" android:textColor="#ff858585" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.0 s · Inmediato" android:layout_weight="1.0" />
+                        <TextView android:textSize="9.0sp" android:textColor="#ff858585" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5.0 s · Máximo" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ff11100f" android:layout_width="fill_parent" android:layout_height="64.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff101010" android:gravity="center" android:id="@id/btnCancelarVista" android:background="@drawable/bg_view_button_white" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="CANCELAR" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" android:letterSpacing="0.08" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff101010" android:gravity="center" android:id="@id/btnAplicarVista" android:background="@drawable/bg_view_button_gold" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="APLICAR" android:layout_weight="1.0" android:layout_marginStart="6.0dip" android:letterSpacing="0.08" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/shark_settings_ir4s_tab_item_view_select_bg" />
+    <item>
+        <shape>
+            <solid android:color="#ff292e32" />
+            <stroke android:width="1.0dip" android:color="#ff3c4553" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+</selector>

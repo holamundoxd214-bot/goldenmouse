@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/_20sdp" android:width="@dimen/_60sdp" android:viewportWidth="60.0" android:viewportHeight="20.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/bg_panel_mode_shape__0" android:pathData="M7.562,1.726l-2.591,8.344l2.591,8.238h44.394l2.79,-8.238l-2.79,-8.344z" android:fillType="nonZero" />
+</vector>

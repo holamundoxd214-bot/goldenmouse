@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/shark_settings_gxd_dimen_124"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shark_settings_lefticon" android:layout_width="@dimen/shark_settings_gxd_dimen_54" android:layout_height="@dimen/shark_settings_gxd_dimen_54" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginStart="@dimen/shark_settings_gxd_dimen_56" />
+    <TextView android:gravity="center_vertical" android:id="@id/shark_settings_titleview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textDirection="locale" android:layout_marginStart="@dimen/shark_settings_gxd_dimen_40" android:layout_marginEnd="@dimen/shark_settings_gxd_dimen_94" android:layout_toEndOf="@id/shark_settings_lefticon" style="@style/shark_settings_ir4sitemviewtitletab" />
+    <ImageView android:id="@id/shark_settings_righticon" android:layout_width="@dimen/shark_settings_gxd_dimen_72" android:layout_height="@dimen/shark_settings_gxd_dimen_72" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/shark_settings_gxd_dimen_12" android:layout_alignParentEnd="true" />
+</RelativeLayout>

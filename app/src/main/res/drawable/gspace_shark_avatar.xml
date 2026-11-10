@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_00" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_01" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_02" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_03" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_04" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_05" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_06" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_07" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_08" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_09" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_10" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_11" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_12" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_13" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_14" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_15" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_16" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_17" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_18" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_19" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_20" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_21" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_22" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_23" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_24" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_25" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_26" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_27" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_28" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_29" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_30" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_31" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_32" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_33" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_34" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_35" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_36" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_37" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_38" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_39" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_40" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_41" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_42" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_43" />
+    <item android:duration="40" android:drawable="@drawable/gspace_shark_sharkman_h_44" />
+</animation-list>

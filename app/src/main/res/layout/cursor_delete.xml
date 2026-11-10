@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ventanaEliminarImagen" android:background="@drawable/bg_gamer_panel" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="350.0dip" android:layout_height="225.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <FrameLayout android:background="@drawable/bg_setting" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imgImagenEliminar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="Imagen seleccionada para eliminar" />
+        </FrameLayout>
+        <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnCancelarEliminar" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="CANCELAR" android:layout_weight="1.0" android:layout_marginEnd="5.0dip" android:letterSpacing="0.08" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff0b0b0b" android:gravity="center" android:id="@id/btnConfirmarEliminar" android:background="#ffffd21a" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="ELIMINAR" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:letterSpacing="0.08" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

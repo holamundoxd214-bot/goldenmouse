@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dip" android:textColor="#e6fff0f2" android:gravity="center" android:id="@id/picker_section_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="10.0dip" />
+    <View android:background="#1fffffff" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/picker_app_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentStart="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/picker_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:alpha="0.85" android:importantForAccessibility="no" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" android:layout_toStartOf="@id/picker_app_switch" android:layout_toEndOf="@id/picker_app_icon" />
+        <com.TryJeanPc.goldenmouse.GoldenSharkGameSwitch android:gravity="end|center" android:id="@id/picker_app_switch" android:background="@null" android:padding="0.0dip" android:layout_width="140.0dip" android:layout_height="48.0dip" android:button="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" android:thumb="@drawable/gp_shark_switch_thumb" android:layout_centerVertical="true" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" app:showText="false" app:splitTrack="false" app:thumbTint="@null" app:track="@drawable/gp_shark_switch_track" app:trackTint="@null" />
+    </RelativeLayout>
+    <View android:id="@id/picker_bottom_line" android:background="#1fffffff" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

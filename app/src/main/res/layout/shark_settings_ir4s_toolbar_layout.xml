@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shark_settings_ir4s_toolbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/shark_settings_gxd_dimen_120"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/shark_settings_ir4s_toolbar_back_container" android:layout_width="wrap_content" android:layout_height="@dimen/shark_settings_gxd_dimen_118">
+        <ImageView android:id="@id/shark_settings_ir4s_toolbar_back_image" android:layout_width="@dimen/shark_settings_gxd_dimen_108" android:layout_height="@dimen/shark_settings_gxd_dimen_72" android:src="@drawable/shark_settings_ir4s_toolbar_back_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/shark_settings_gxd_dimen_44" />
+        <View android:id="@id/shark_settings_ir4s_toolbar_back_hotspot" android:layout_width="@dimen/shark_settings_gxd_dimen_194" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="@style/shark_settings_gxd_textappearance_toolbartitle" android:ellipsize="end" android:gravity="start|center" android:id="@id/shark_settings_ir4s_toolbar_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textDirection="locale" android:layout_toStartOf="@id/shark_settings_ir4s_toolbar_style_container" android:layout_toEndOf="@id/shark_settings_ir4s_toolbar_back_container" />
+    <FrameLayout android:id="@id/shark_settings_ir4s_toolbar_style_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+</RelativeLayout>

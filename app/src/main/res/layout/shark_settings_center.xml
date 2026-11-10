@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/picker_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/shark_settings_center_header" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/shark_settings_center_sidebar" android:background="#ff14161f" android:scrollbars="none" android:layout_width="@dimen/shark_settings_gxd_dimen_586" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/shark_settings_gxd_dimen_24" android:paddingBottom="@dimen/shark_settings_gxd_dimen_44" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/shark_settings_gxd_dimen_44" android:paddingEnd="@dimen/shark_settings_gxd_dimen_44">
+                <include android:id="@id/shark_settings_basic_tab" android:layout_width="@dimen/shark_settings_gxd_dimen_498" android:layout_height="@dimen/shark_settings_gxd_dimen_124" android:layout_marginTop="@dimen/shark_settings_gxd_dimen_20" layout="@layout/shark_settings_basic_tab" />
+                <include android:id="@id/shark_settings_optimization_tab" android:layout_width="@dimen/shark_settings_gxd_dimen_498" android:layout_height="@dimen/shark_settings_gxd_dimen_124" android:layout_marginTop="@dimen/shark_settings_gxd_dimen_20" layout="@layout/shark_settings_basic_tab" />
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView android:id="@id/shark_settings_center_grid" android:background="@drawable/shark_settings_gxd_second_page_bg_dark" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:paddingTop="17.449982dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="17.089996dip" android:layout_marginEnd="14.179993dip">
+                <com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout android:id="@id/shark_settings_basic_content" android:background="#b2292e32" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/shark_settings_desktops" android:background="@color/shark_settings_selector_setting_click" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:paddingTop="18.909973dip" android:paddingBottom="18.909973dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shark_settings_desktops_title" android:paddingStart="23.0dip" android:paddingEnd="50.0dip" style="@style/shark_settings_ir4sitemviewtitle" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shark_settings_gxd_ic_arrow_on_list" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="23.0dip" android:layout_alignParentEnd="true" />
+                        <View android:layout_alignParentBottom="true" style="@style/shark_settings_settings_line" />
+                    </RelativeLayout>
+                </com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/shark_settings_optimization_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:paddingTop="18.909973dip" android:paddingBottom="18.909973dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shark_settings_optimization_title" android:paddingStart="23.0dip" android:paddingEnd="50.0dip" style="@style/shark_settings_ir4sitemviewtitle" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

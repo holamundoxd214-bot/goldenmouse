@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/gspace_shark_main_top_background" android:layout_width="fill_parent" android:layout_height="52.359985dip" android:importantForAccessibility="no" />
+    <ImageView android:id="@id/gspace_shark_user" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/gspace_shark_avatar" android:scaleType="fitCenter" android:contentDescription="@string/gspace_shark_user" android:layout_marginStart="11.639984dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="43.639984dip">
+        <ImageView android:id="@id/gspace_shark_settings" android:layout_width="43.639984dip" android:layout_height="43.639984dip" android:src="@drawable/gspace_shark_settings" android:contentDescription="@string/gspace_shark_settings" android:layout_marginEnd="18.549988dip" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/gspace_shark_diving" android:padding="7.269989dip" android:visibility="invisible" android:layout_width="37.819977dip" android:layout_height="37.819977dip" android:layout_marginTop="2.9099731dip" android:src="@drawable/gspace_shark_icon_diving_mode" android:contentDescription="@string/gspace_shark_diving" android:layout_marginEnd="10.909973dip" android:layout_toStartOf="@id/gspace_shark_exit" />
+        <ImageView android:id="@id/gspace_shark_exit" android:visibility="invisible" android:layout_width="43.639984dip" android:layout_height="43.639984dip" android:src="@drawable/gspace_shark_ic_exit" android:contentDescription="@string/gspace_shark_exit" android:layout_marginEnd="137.09dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="10.909973dip" android:layout_marginTop="48.359985dip">
+        <TextClock android:textSize="8.0dip" android:textColor="#e6ffffff" android:gravity="center" android:id="@id/gspace_shark_clock" android:layout_width="72.72998dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:fontFamily="@font/gspace_shark_blackshark_bold" />
+        <ImageView android:layout_width="24.72998dip" android:layout_height="10.909973dip" android:src="@drawable/gspace_shark_stat_sys_signal_0" android:importantForAccessibility="no" android:layout_toStartOf="@id/gspace_shark_clock" />
+        <FrameLayout android:id="@id/gspace_shark_battery" android:layout_width="27.639984dip" android:layout_height="10.909973dip" android:layout_toEndOf="@id/gspace_shark_clock">
+            <com.TryJeanPc.goldenmouse.gamespace.GoldenSharkBatteryView android:id="@id/gspace_shark_battery_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+            <TextView android:textSize="7.269989dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/gspace_shark_battery_percent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:importantForAccessibility="no" />
+        </FrameLayout>
+        <ImageView android:id="@id/gspace_shark_charging" android:visibility="gone" android:layout_width="10.909973dip" android:layout_height="10.909973dip" android:src="@drawable/gspace_shark_charging" android:importantForAccessibility="no" android:layout_marginStart="2.0dip" android:layout_toEndOf="@id/gspace_shark_battery" />
+    </RelativeLayout>
+</merge>

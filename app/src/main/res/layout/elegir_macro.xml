@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/ventanaElegirTipo" android:clipChildren="false" android:clipToPadding="false" android:layout_width="320.0dip" android:layout_height="220.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/panelContainer" android:background="@drawable/bg_gamer_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_gamer_header" android:layout_width="fill_parent" android:layout_height="52.0dip" android:paddingStart="18.0dip" android:paddingEnd="14.0dip">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ELEGIR TIPO" android:maxLines="1" android:letterSpacing="0.04" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_status" android:layout_width="fill_parent" android:layout_height="30.0dip" android:paddingStart="18.0dip" android:paddingEnd="14.0dip">
+                <View android:background="#ffffd21a" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+                <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffd4d4d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SELECCIONAR OPCIÓN" android:layout_marginStart="9.0dip" android:letterSpacing="0.08" />
+            </LinearLayout>
+            <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnTipoScript" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="20.0dip" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="SCRIPT" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:letterSpacing="0.1" />
+                    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnTipoMacro" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="8.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="20.0dip" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="MACRO" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:letterSpacing="0.1" />
+                    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

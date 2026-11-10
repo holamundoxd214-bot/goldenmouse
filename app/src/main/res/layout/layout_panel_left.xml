@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="start" android:id="@id/layoutPanelLeft" android:background="@drawable/bg_panel_left" android:layout_width="@dimen/_280sdp" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_minus3sdp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="end|bottom|center" android:id="@id/closeAreaPanelLeft" android:layout_width="@dimen/_140sdp" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/_2sdp" />
+    <com.TryJeanPc.goldenmouse.CpuIndicatorView android:layout_gravity="end" android:id="@id/cpuView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="start" android:background="@drawable/bg_panel_menu_left" android:layout_width="@dimen/_250sdp" android:layout_height="fill_parent" android:layout_marginStart="@dimen/_minus3sdp">
+        <ScrollView android:scrollbars="none" android:layout_width="@dimen/_100sdp" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_49sdp" android:layout_marginStart="@dimen/_10sdp">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_10sdp" android:paddingEnd="@dimen/_10sdp">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/btnCrosshairAssistant" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                        <LinearLayout android:layout_gravity="center" android:background="@drawable/bg_panel_circle_ic" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/keyboard" />
+                        <ImageView android:layout_gravity="end|center|top" android:id="@id/btnCrosshairSettings" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_kebab_menu" android:layout_marginEnd="@dimen/_minus3sdp" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Mapeo" android:fontFamily="@font/sf_pro_light" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/btnMonitoringInfo" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                        <LinearLayout android:layout_gravity="center" android:background="@drawable/bg_panel_circle_ic" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                        <ImageView android:layout_gravity="center" android:padding="@dimen/_2sdp" android:layout_width="@dimen/_19sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/script" />
+                        <ImageView android:layout_gravity="end|center|top" android:id="@id/btnMonitoringSettings" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_kebab_menu" android:layout_marginEnd="@dimen/_minus3sdp" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Macros" android:fontFamily="@font/sf_pro_light" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/btnFpsMonitoringItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/btnMonitoringEmulator" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                        <LinearLayout android:layout_gravity="center" android:background="@drawable/bg_panel_circle_ic" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/_19sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/fps" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="FPS" android:fontFamily="@font/sf_pro_light" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/btnSmartDPISwitch" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                        <LinearLayout android:layout_gravity="center" android:background="@drawable/bg_panel_circle_ic" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" />
+                        <ImageView android:layout_gravity="center" android:padding="@dimen/_2sdp" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/bloqueo" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="DPI" android:fontFamily="@font/sf_pro_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_panel_menu_top_left" android:layout_width="fill_parent" android:layout_height="@dimen/_50sdp" android:layout_marginTop="@dimen/_minus1sdp" android:layout_marginEnd="@dimen/_51sdp">
+            <LinearLayout android:gravity="center" android:padding="@dimen/_5sdp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:id="@id/btnHome" android:background="@drawable/bg_panel_feature_top" android:focusable="true" android:clickable="true" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:foreground="?selectableItemBackground" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_20sdp">
+                    <ImageView android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_20sdp" android:layout_marginBottom="@dimen/_1sdp" android:src="@drawable/ic_home" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:background="@drawable/bg_panel_feature_top" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:layout_marginEnd="@dimen/_20sdp">
+                    <ImageView android:padding="@dimen/_1sdp" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/cuenta" app:tint="@color/anti_flash_white" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:background="@drawable/bg_panel_feature_top" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:layout_marginEnd="@dimen/_25sdp">
+                    <ImageView android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_blue_magic" app:tint="@color/anti_flash_white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="end|center" android:orientation="vertical" android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_80sdp" android:layout_marginBottom="@dimen/_65sdp" android:layout_marginEnd="@dimen/_40sdp">
+            <View android:layout_gravity="center" android:id="@id/bgCircleCpuCountTop" android:background="@drawable/circle_top_shape" android:focusable="false" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_80sdp" android:layout_marginTop="@dimen/_minus8sdp" android:alpha="0.7" android:rotationX="80.0" />
+            <View android:layout_gravity="center" android:id="@id/bgCircleCpuCountBottom" android:background="@drawable/bg_panel_circle_bottom" android:layout_width="@dimen/_95sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_5sdp" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+                <TextView android:textSize="@dimen/_18sdp" android:textColor="@color/anti_flash_white" android:gravity="center" android:id="@id/textCpuPercent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3.20" android:fontFamily="@font/time_bold" />
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/anti_flash_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_minus5sdp" android:text="GHz" android:fontFamily="@font/time_bold" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/blue_primary" android:layout_gravity="bottom|center" android:id="@id/txtLabelCPU" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_16sdp" android:text="◄ CPU ►" android:fontFamily="@font/time_bold" />
+        </FrameLayout>
+        <include layout="@layout/layout_panel_mode_left" />
+        <FrameLayout android:layout_gravity="end|bottom|center" android:orientation="vertical" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_30sdp" android:layout_marginEnd="@dimen/_75sdp">
+            <View android:background="@drawable/bg_panel_slide_brightness" android:layout_width="fill_parent" android:layout_height="@dimen/_90sdp" android:layout_marginBottom="@dimen/_15sdp" android:backgroundTint="#e62b3737" />
+            <View android:layout_gravity="bottom" android:id="@id/sliderBrightness" android:background="@drawable/bg_panel_slide_brightness" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="@dimen/_90sdp" android:layout_marginBottom="@dimen/_15sdp" />
+            <ImageView android:layout_gravity="start|bottom|center" android:layout_width="@dimen/_10sdp" android:layout_height="@dimen/_10sdp" android:src="@drawable/ic_brightness" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

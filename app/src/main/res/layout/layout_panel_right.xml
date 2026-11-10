@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:id="@id/layoutPanelRight" android:background="@drawable/bg_panel_right" android:layout_width="@dimen/_280sdp" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="start|bottom|center" android:id="@id/closeAreaPanelRight" android:layout_width="@dimen/_140sdp" android:layout_height="fill_parent" android:layout_marginStart="@dimen/_2sdp" />
+    <com.TryJeanPc.goldenmouse.RamIndicatorView android:layout_gravity="end" android:id="@id/ramView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="end" android:background="@drawable/bg_panel_menu_right" android:layout_width="@dimen/_250sdp" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/_minus3sdp">
+        <ScrollView android:layout_gravity="end" android:scrollbars="none" android:layout_width="@dimen/_100sdp" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_49sdp" android:layout_marginEnd="@dimen/_10sdp">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_10sdp" android:paddingEnd="@dimen/_10sdp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_5sdp">
+                        <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/bgOptimize" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                            <ImageView android:layout_gravity="center" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/settingsbt" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Ajustes" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/btnMouseSettingsItem" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/_5sdp">
+                        <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/bgTouchUp" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                            <ImageView android:layout_gravity="center" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/icomouse" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/txtTouchUp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/_33sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Mouse" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_5sdp">
+                        <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/bgBrightnessAuto" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                            <ImageView android:layout_gravity="center" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/settingsbt" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/txtBrightnessAuto" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/_33sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Retroceso" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/_5sdp">
+                        <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/bgRefreshRateAuto" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                            <ImageView android:layout_gravity="center" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/ic_screenshot_fill" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/txtRefreshRateAuto" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/_33sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Resolucion" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_5sdp">
+                        <com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/bgScreenshot" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" app:cardBackgroundColor="#4d0c6f82" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="@color/blue_primary" app:strokeWidth="@dimen/_1sdp">
+                            <ImageView android:layout_gravity="center" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/bloqueo" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/txtScreenshot" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/_33sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="TEXTO" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/_5sdp">
+                        <LinearLayout android:background="@drawable/bg_panel_feature" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" />
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="TEXTOX" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_5sdp">
+                        <LinearLayout android:background="@drawable/bg_panel_feature" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" />
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="TEXTOX" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/_5sdp">
+                        <LinearLayout android:background="@drawable/bg_panel_feature" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" />
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/anti_flash_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="TEXTOX" android:fontFamily="@font/sf_pro_light" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_panel_menu_top_right" android:layout_width="fill_parent" android:layout_height="@dimen/_50sdp" android:layout_marginTop="@dimen/_minus1sdp" android:layout_marginStart="@dimen/_51sdp">
+            <LinearLayout android:gravity="center" android:padding="@dimen/_5sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/_15sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/anti_flash_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GOLDEN MOUSE" android:fontFamily="@font/magic_bold" android:letterSpacing="0.1" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_80sdp" android:layout_marginBottom="@dimen/_65sdp" android:layout_marginStart="@dimen/_40sdp">
+            <View android:layout_gravity="center" android:id="@id/bgCircleRamCountTop" android:background="@drawable/circle_top_shape" android:focusable="false" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_80sdp" android:layout_marginTop="@dimen/_minus8sdp" android:alpha="0.7" android:rotationX="80.0" />
+            <View android:layout_gravity="center" android:id="@id/bgCircleRamCountBottom" android:background="@drawable/bg_panel_circle_bottom" android:layout_width="@dimen/_95sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_5sdp" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+                <TextView android:textSize="@dimen/_18sdp" android:textColor="@color/anti_flash_white" android:gravity="center" android:id="@id/textRamPercent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="6.80" android:fontFamily="@font/time_bold" />
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/anti_flash_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_minus5sdp" android:text="GB" android:fontFamily="@font/time_bold" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/blue_primary" android:layout_gravity="bottom|center" android:id="@id/txtLabelRAM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_16sdp" android:text="◄ RAM ►" android:fontFamily="@font/time_bold" />
+        </FrameLayout>
+        <include layout="@layout/layout_panel_mode_right" />
+        <FrameLayout android:layout_gravity="start|bottom|center" android:orientation="vertical" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_30sdp" android:layout_marginStart="@dimen/_75sdp">
+            <View android:background="@drawable/bg_panel_slide_volume" android:layout_width="fill_parent" android:layout_height="@dimen/_90sdp" android:layout_marginBottom="@dimen/_15sdp" android:backgroundTint="#e62b3737" />
+            <View android:layout_gravity="bottom" android:id="@id/sliderVolume" android:background="@drawable/bg_panel_slide_volume" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="@dimen/_90sdp" android:layout_marginBottom="@dimen/_15sdp" />
+            <ImageView android:layout_gravity="end|bottom|center" android:padding="@dimen/_1sdp" android:layout_width="@dimen/_10sdp" android:layout_height="@dimen/_10sdp" android:src="@drawable/ic_volume_filled" android:importantForAccessibility="no" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

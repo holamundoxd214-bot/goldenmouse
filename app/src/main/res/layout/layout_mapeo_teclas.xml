@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#990a0a0a" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/lienzoMapeo" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/contenedorCortinaMapeo" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView android:id="@id/panelMapeoTeclas" android:layout_width="@dimen/_220sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" app:cardBackgroundColor="#cc0a0a0a" app:shapeAppearanceOverlay="@style/CutCornerShapeButton" app:strokeColor="#ffffd700" app:strokeWidth="@dimen/_1sdp">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="#ffffd700" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_5sdp" android:text="Mapeo de Teclas" android:fontFamily="@font/magic_bold" android:letterSpacing="0.1" />
+                <View android:background="#4dffd700" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/_2sdp" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btnCerrarMapeo" android:background="?selectableItemBackground" android:padding="@dimen/_5sdp" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/atras" app:tint="#ffff1744" />
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Salir" android:fontFamily="@font/time_bold" />
+                    </LinearLayout>
+                    <View android:background="#4dffd700" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btnAgregarTecla" android:background="?selectableItemBackground" android:padding="@dimen/_5sdp" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.2">
+                        <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/keyboard" app:tint="#ff00e5ff" />
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Añadir tecla" android:fontFamily="@font/time_bold" />
+                    </LinearLayout>
+                    <View android:background="#4dffd700" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btnGuardarMapeo" android:background="?selectableItemBackground" android:padding="@dimen/_5sdp" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/guardar" app:tint="#ff00e676" />
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Guardar" android:fontFamily="@font/time_bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#4dffd700" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/_2sdp" android:layout_marginBottom="@dimen/_2sdp" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btnCompartirMapeo" android:background="?selectableItemBackground" android:padding="@dimen/_5sdp" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/export_hover" app:tint="#ffb39ddb" />
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Exportar" android:fontFamily="@font/time_bold" />
+                    </LinearLayout>
+                    <View android:background="#4dffd700" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btnImportarMapeo" android:background="?selectableItemBackground" android:padding="@dimen/_5sdp" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/import_hover" app:tint="#ffffca28" />
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Importar" android:fontFamily="@font/time_bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/btnToggleMinimizarMapeo" android:focusable="true" android:clickable="true" android:layout_width="@dimen/_56sdp" android:layout_height="@dimen/_22sdp" android:layout_marginTop="0.0dip" android:foreground="?selectableItemBackground" android:layout_below="@id/panelMapeoTeclas" android:layout_marginEnd="0.0dip" android:layout_alignEnd="@id/panelMapeoTeclas" android:clipToOutline="true" app:cardBackgroundColor="#e61a1a1a" app:cardElevation="@dimen/_4sdp" app:shapeAppearanceOverlay="@style/ShapePestanaMinimapeo" app:strokeColor="#33ffffff" app:strokeWidth="1.0dip">
+            <ImageView android:id="@id/imgMinimapeo" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/minimapeo" android:scaleType="centerCrop" android:contentDescription="Minimizar o maximizar mapeo" />
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</FrameLayout>

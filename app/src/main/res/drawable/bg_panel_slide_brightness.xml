@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/_90sdp" android:width="@dimen/_50sdp" android:viewportWidth="50.0" android:viewportHeight="90.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.742,4.384v-3.737h44.515l-1.757,3.737z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.851,10.505v-3.601h41.784l-1.514,3.601z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.851,16.539v-3.675h39.274l-1.56,3.675z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.851,22.573v-3.675h36.701l-1.478,3.675z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.851,28.607v-3.675h34.401l-1.531,3.675z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.851,34.641v-3.675h31.869l-1.639,3.675z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.851,40.822v-3.749h29.233l-1.62,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,47.003v-3.749h26.535l-1.595,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,53.149v-3.749h24.088l-1.58,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,59.035v-3.749h21.618l-1.629,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,64.922v-3.749h19.171l-1.55,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,71.104v-3.749h16.472l-1.588,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,77.064v-3.749h14.021l-1.574,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,83.245v-3.749h11.468l-1.425,3.749z" android:fillType="nonZero" />
+    <path android:fillColor="@color/anti_flash_white" android:pathData="M2.752,89.353v-3.749h8.958l-1.471,3.749z" android:fillType="nonZero" />
+</vector>

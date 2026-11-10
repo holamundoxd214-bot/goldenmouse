@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="672.0dip" android:layout_height="224.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager.widget.ViewPager android:id="@id/gspace_compact_pages" android:layout_width="fill_parent" android:layout_height="196.0dip" />
+    <com.TryJeanPc.goldenmouse.gamespace.RedMagicIndicatorView android:id="@id/gspace_compact_indicator" android:layout_width="fill_parent" android:layout_height="28.0dip" android:importantForAccessibility="no" />
+</LinearLayout>

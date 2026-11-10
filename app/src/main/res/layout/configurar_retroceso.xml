@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:clickable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/panelContainer" android:background="@drawable/bg_gamer_panel" android:clickable="true" android:layout_width="300.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_gamer_header" android:layout_width="fill_parent" android:layout_height="68.0dip" android:paddingStart="18.0dip" android:paddingEnd="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ff858585" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GOLDEN MOUSE" android:letterSpacing="0.2" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CONTROL DE RETROCESO" android:singleLine="true" android:letterSpacing="0.01" />
+            </LinearLayout>
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnCloseRetroceso" android:background="@drawable/exit" android:focusable="true" android:clickable="true" android:layout_width="34.0dip" android:layout_height="34.0dip" android:text="×" android:contentDescription="Cerrar control de retroceso" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_status" android:layout_width="fill_parent" android:layout_height="33.0dip" android:paddingStart="18.0dip" android:paddingEnd="14.0dip">
+            <View android:background="@drawable/bg_status" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffd4d4d4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="CONTROL DEL PANEL" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="9.0dip" android:letterSpacing="0.08" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtEstadoRetroceso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DESACTIVADO" />
+        </LinearLayout>
+        <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ScrollView android:id="@id/scrollViewRetroceso" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CONTROL GENERAL" android:layout_marginStart="8.0dip" android:letterSpacing="0.18" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="9.0dip" android:paddingStart="13.0dip" android:paddingEnd="2.0dip">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Habilitar" android:layout_weight="1.0" />
+                    <Switch android:id="@id/switchHabilitarRetroceso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="0.7" android:scaleY="0.7" android:thumbTint="@color/switch_thumb" android:trackTint="@color/switch_track" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="6.0dip" android:paddingStart="13.0dip" android:paddingEnd="2.0dip">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Mostrar panel" android:layout_weight="1.0" />
+                    <Switch android:id="@id/switchMostrarPanelRetroceso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="0.7" android:scaleY="0.7" android:thumbTint="@color/switch_thumb" android:trackTint="@color/switch_track" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="6.0dip" android:paddingStart="13.0dip" android:paddingEnd="2.0dip">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Panel fijo" android:layout_weight="1.0" />
+                    <Switch android:id="@id/switchPanelFijoRetroceso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="0.7" android:scaleY="0.7" android:thumbTint="@color/switch_thumb" android:trackTint="@color/switch_track" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="21.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AJUSTES DEL PANEL" android:layout_marginStart="8.0dip" android:letterSpacing="0.18" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="9.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fff5f5f5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Transparencia del panel" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtTransparenciaPanelRetroceso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/seekTransparenciaPanelRetroceso" android:layout_width="fill_parent" android:layout_height="30.0dip" android:max="100" android:progress="100" android:progressTint="#ffffd21a" android:progressBackgroundTint="#ff303030" android:thumbTint="#ffffd21a" android:min="10" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="6.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fff5f5f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Porcentaje global" />
+                            <TextView android:textSize="7.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ajusta todos los valores" />
+                        </LinearLayout>
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtPorcentajeGlobalRetroceso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/seekPorcentajeGlobalRetroceso" android:layout_width="fill_parent" android:layout_height="30.0dip" android:max="200" android:progress="100" android:progressTint="#ffffd21a" android:progressBackgroundTint="#ff303030" android:thumbTint="#ffffd21a" android:min="40" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="19.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DURACIÓN DEL RETROCESO" android:layout_marginStart="8.0dip" android:letterSpacing="0.16" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_setting" android:paddingTop="9.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Modo de duración" />
+                    <RadioGroup android:orientation="vertical" android:id="@id/radioGroupDuracionRetroceso" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                        <RadioButton android:textSize="10.0sp" android:textColor="#ffeaeaea" android:id="@id/radioDuracionMantenerRetroceso" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:minHeight="36.0dip" android:text="Mientras mantengo clic izquierdo" android:buttonTint="#ffffd21a" />
+                        <RadioButton android:textSize="10.0sp" android:textColor="#ffeaeaea" android:id="@id/radioDuracionMaximaRetroceso" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="36.0dip" android:text="Duración máxima en segundos" android:buttonTint="#ffffd21a" />
+                    </RadioGroup>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/groupDuracionMaxRetroceso" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="4.0dip">
+                        <TextView android:textSize="10.0sp" android:textColor="#ffd0d0d0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Tiempo máximo (s)" android:layout_weight="1.0" />
+                        <EditText android:textSize="12.0sp" android:textColor="#ffffffff" android:textColorHint="#ff777777" android:gravity="center" android:id="@id/editDuracionMaxRetroceso" android:background="@drawable/bg_setting" android:padding="5.0dip" android:layout_width="86.0dip" android:layout_height="40.0dip" android:hint="2.5" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0123456789." android:inputType="numberDecimal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="19.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EDICIÓN AVANZADA" android:layout_marginStart="8.0dip" android:letterSpacing="0.16" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnEditarCurvasRetroceso" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="7.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Editar curvas X/Y" />
+                        <TextView android:textSize="9.0sp" android:textColor="#ff888888" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Movimiento vertical y horizontal" android:maxLines="1" />
+                    </LinearLayout>
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ABRIR  ›" android:layout_marginStart="6.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_gamer_header" android:layout_width="fill_parent" android:layout_height="59.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnRestablecerRetroceso" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="RESTABLECER" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff181208" android:gravity="center" android:id="@id/btnGuardarRetroceso" android:background="@drawable/bg_view_button_gold" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="GUARDAR" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="start|center|top" android:background="@drawable/bg_top_point" android:layout_width="92.0dip" android:layout_height="12.0dip" />
+    <View android:layout_gravity="start|bottom|center" android:background="@drawable/bg_bottom_point" android:layout_width="92.0dip" android:layout_height="12.0dip" />
+</FrameLayout>

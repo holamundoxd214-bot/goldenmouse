@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/GoldenCenterBody">
+        <include layout="@layout/golden_center_activation_tabs" />
+        <com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout android:background="#b2292e32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shark_settings_gxd_dimen_20">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/shark_settings_selector_setting_click" android:paddingTop="18.909973dip" android:paddingBottom="18.909973dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.549988dip" android:paddingStart="23.0dip" android:paddingEnd="23.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:ellipsize="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Preparación de depuración USB" android:maxLines="3" style="@style/shark_settings_ir4sitemviewtitle" />
+                        <TextView android:text="Sin acción implementada en esta versión" style="@style/GoldenCenterSecondary" />
+                    </LinearLayout>
+                    <TextView android:id="@id/golden_activation_step_1" android:text="PREPARAR" android:layout_marginStart="18.0dip" style="@style/GoldenPanelAction" />
+                </LinearLayout>
+                <View android:layout_alignParentBottom="true" style="@style/shark_settings_settings_line" />
+            </RelativeLayout>
+        </com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout>
+        <com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout android:background="#b2292e32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shark_settings_gxd_dimen_20">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/shark_settings_selector_setting_click" android:paddingTop="18.909973dip" android:paddingBottom="18.909973dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.549988dip" android:paddingStart="23.0dip" android:paddingEnd="23.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:ellipsize="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Conectar dispositivo" android:maxLines="3" style="@style/shark_settings_ir4sitemviewtitle" />
+                        <TextView android:text="Sin acción implementada en esta versión" style="@style/GoldenCenterSecondary" />
+                    </LinearLayout>
+                    <TextView android:id="@id/golden_activation_step_2" android:text="CONECTAR" android:layout_marginStart="18.0dip" style="@style/GoldenPanelAction" />
+                </LinearLayout>
+                <View android:layout_alignParentBottom="true" style="@style/shark_settings_settings_line" />
+            </RelativeLayout>
+        </com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout>
+        <com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout android:background="#b2292e32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shark_settings_gxd_dimen_20">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/shark_settings_selector_setting_click" android:paddingTop="18.909973dip" android:paddingBottom="18.909973dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.549988dip" android:paddingStart="23.0dip" android:paddingEnd="23.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:ellipsize="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Activar desde PC" android:maxLines="3" style="@style/shark_settings_ir4sitemviewtitle" />
+                        <TextView android:text="Sin acción implementada en esta versión" style="@style/GoldenCenterSecondary" />
+                    </LinearLayout>
+                    <TextView android:id="@id/golden_activation_step_3" android:text="ACTIVAR" android:layout_marginStart="18.0dip" style="@style/GoldenPanelAction" />
+                </LinearLayout>
+                <View android:layout_alignParentBottom="true" style="@style/shark_settings_settings_line" />
+            </RelativeLayout>
+        </com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout>
+        <TextView android:id="@id/golden_activation_status" android:accessibilityLiveRegion="polite" style="@style/GoldenCenterSecondary" />
+        <TextView android:id="@id/golden_activation_feedback" android:accessibilityLiveRegion="polite" style="@style/GoldenCenterSecondary" />
+        <TextView android:layout_gravity="end" android:id="@id/golden_activation_refresh" android:layout_marginTop="12.0dip" android:text="ACTUALIZAR" style="@style/GoldenPanelAction" />
+    </LinearLayout>
+</ScrollView>

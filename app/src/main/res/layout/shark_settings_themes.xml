@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shark_settings_gxd_second_page_bg_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/shark_settings_toolbar" layout="@layout/shark_settings_ir4s_toolbar_layout" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/shark_settings_toolbar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/shark_settings_album_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.449982dip" android:layout_marginBottom="12.72998dip" android:paddingStart="32.72998dip" android:paddingEnd="23.269989dip">
+                <com.TryJeanPc.goldenmouse.sharksettings.RoundGroupView android:id="@id/shark_settings_album" android:layout_width="0.0dip" android:layout_height="130.91dip" android:foreground="@drawable/shark_settings_selector_wallpaper_bg">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shark_settings_album_bg" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+                    <TextView android:textSize="16.72998dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shark_settings_album_title" android:layout_centerInParent="true" />
+                </com.TryJeanPc.goldenmouse.sharksettings.RoundGroupView>
+                <com.TryJeanPc.goldenmouse.sharksettings.RoundGroupView android:id="@id/shark_settings_default" android:layout_width="0.0dip" android:layout_height="130.91dip" android:foreground="@drawable/shark_settings_selector_wallpaper_bg" android:layout_marginStart="10.0dip">
+                    <ImageView android:id="@id/shark_settings_default_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gspace_stage" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+                    <TextView android:textSize="16.72998dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallpaper_default_title" android:layout_centerInParent="true" />
+                </com.TryJeanPc.goldenmouse.sharksettings.RoundGroupView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

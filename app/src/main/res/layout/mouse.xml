@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/panelContainer" android:background="@drawable/bg_gamer_panel" android:clickable="true" android:layout_width="300.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_gamer_header" android:layout_width="fill_parent" android:layout_height="68.0dip" android:paddingStart="18.0dip" android:paddingEnd="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ff858585" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GOLDEN MOUSE" android:letterSpacing="0.2" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOUSE" android:maxLines="1" android:letterSpacing="0.04" />
+            </LinearLayout>
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnCloseMouse" android:background="@drawable/exit" android:layout_width="34.0dip" android:layout_height="34.0dip" android:text="×" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_status" android:layout_width="fill_parent" android:layout_height="33.0dip" android:paddingStart="18.0dip" android:paddingEnd="14.0dip">
+            <View android:background="@drawable/bg_status" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffd4d4d4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="DISPOSITIVO" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="9.0dip" android:letterSpacing="0.08" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtEstadoMouse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CONECTADO" android:letterSpacing="0.08" />
+        </LinearLayout>
+        <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ScrollView android:id="@id/scrollViewMouse" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="21.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PUNTERO" android:layout_marginStart="8.0dip" android:letterSpacing="0.18" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnImagenPuntero" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="6.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Imagen del puntero" android:layout_weight="1.0" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtImagenPuntero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Default  ›" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="6.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fff5f5f5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Tamaño del puntero" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtTamanoPuntero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/seekTamanoPuntero" android:layout_width="fill_parent" android:layout_height="30.0dip" android:max="200" android:progress="100" android:progressTint="#ffffd21a" android:thumbTint="#ffffd21a" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="6.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fff5f5f5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Transparencia" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtTransparenciaPuntero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/seekTransparenciaPuntero" android:layout_width="fill_parent" android:layout_height="30.0dip" android:max="100" android:progress="100" android:progressTint="#ffffd21a" android:thumbTint="#ffffd21a" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="21.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VELOCIDAD" android:layout_marginStart="8.0dip" android:letterSpacing="0.18" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="9.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fff5f5f5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Velocidad del puntero" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtVelocidadPuntero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/seekVelocidadPuntero" android:layout_width="fill_parent" android:layout_height="30.0dip" android:max="100" android:progress="50" android:progressTint="#ffffd21a" android:thumbTint="#ffffd21a" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="6.0dip" android:paddingStart="13.0dip" android:paddingEnd="2.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aceleración" />
+                        <TextView android:textSize="7.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Acelera según la distancia" />
+                    </LinearLayout>
+                    <Switch android:id="@id/switchAceleracion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="0.7" android:scaleY="0.7" android:thumbTint="@color/switch_thumb" android:trackTint="@color/switch_track" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="21.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TASA DE SONDEO" android:layout_marginStart="8.0dip" android:letterSpacing="0.12" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="8.0dip" android:text="Polling Rate" android:paddingStart="4.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/groupPollingRateOpciones" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffe5e5e5" android:gravity="center" android:id="@id/btnPollingNativo" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Nativo" android:layout_weight="1.0" />
+                        <TextView android:textSize="10.0sp" android:textColor="#ffe5e5e5" android:gravity="center" android:id="@id/btnPolling125" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="125 Hz" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="#ffe5e5e5" android:gravity="center" android:id="@id/btnPolling250" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="250 Hz" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="6.0dip">
+                        <TextView android:textSize="10.0sp" android:textColor="#ffe5e5e5" android:gravity="center" android:id="@id/btnPolling500" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="500 Hz" android:layout_weight="1.0" />
+                        <TextView android:textSize="10.0sp" android:textColor="#ffe5e5e5" android:gravity="center" android:id="@id/btnPolling1000" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="1000 Hz" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+                        <TextView android:textSize="9.0sp" android:textColor="#ffe5e5e5" android:gravity="center" android:id="@id/btnPollingPersonalizado" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Personalizado" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/groupPollingPersonalizado" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="11.0sp" android:textColor="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Frecuencia personalizada" android:labelFor="@id/editPollingPersonalizado" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                            <EditText android:textSize="12.0sp" android:textColor="#ffffffff" android:textColorHint="#ffa0a0a0" android:id="@id/editPollingPersonalizado" android:background="@drawable/bg_setting" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="400" android:hint="100–1000" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+                            <TextView android:textSize="11.0sp" android:textColor="#ffe5e5e5" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hz" />
+                            <TextView android:textSize="11.0sp" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnAplicarPollingPersonalizado" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="Aplicar" android:paddingHorizontal="12.0dip" />
+                        </LinearLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="#ffa0a0a0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Pulsa Aplicar para confirmar el valor." />
+                    </LinearLayout>
+                    <TextView android:textSize="11.0sp" android:textColor="#ffffd21a" android:id="@id/txtPollingAplicado" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Entrega configurada: Nativo" android:accessibilityLiveRegion="polite" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ffa0a0a0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Regula el movimiento entregado; no cambia la frecuencia física del mouse." />
+                </LinearLayout>
+                <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="13.0dip" android:alpha="0.3" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="21.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RUEDA" android:layout_marginStart="8.0dip" android:letterSpacing="0.18" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_setting" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="9.0dip" android:paddingStart="13.0dip" android:paddingEnd="13.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fff5f5f5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sensibilidad de rueda" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:id="@id/txtSensibilidadRueda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/seekSensibilidadRueda" android:layout_width="fill_parent" android:layout_height="30.0dip" android:max="100" android:progress="50" android:progressTint="#ffffd21a" android:thumbTint="#ffffd21a" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="21.0dip">
+                    <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="14.0dip" />
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PERFILES" android:layout_marginStart="8.0dip" android:letterSpacing="0.18" />
+                    <View android:background="#ffffd21a" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:alpha="0.25" android:layout_marginStart="9.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="59.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnRestablecerMouse" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="RESTABLECER" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" android:letterSpacing="0.16" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnGuardarPerfil" android:background="@drawable/bg_setting" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="GUARDAR" android:layout_weight="1.0" android:layout_marginStart="6.0dip" android:letterSpacing="0.16" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="start|center|top" android:background="@drawable/bg_top_point" android:layout_width="92.0dip" android:layout_height="12.0dip" />
+    <View android:layout_gravity="start|bottom|center" android:background="@drawable/bg_bottom_point" android:layout_width="92.0dip" android:layout_height="12.0dip" />
+</FrameLayout>

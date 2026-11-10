@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/panelConfigurarToque" android:background="@drawable/bg_vista_premium_panel" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clipToOutline="true">
+        <requestFocus />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_gamer_header" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <View android:layout_gravity="start|center" android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="24.0dip" android:layout_marginStart="15.0dip" />
+                <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="CONFIGURACIÓN DE TOQUE" android:letterSpacing="0.09" />
+                <View android:layout_gravity="end|center" android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="24.0dip" android:layout_marginEnd="15.0dip" />
+            </FrameLayout>
+            <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <ScrollView android:id="@id/scrollConfigurarToque" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="false" android:layout_weight="1.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:paddingTop="14.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_vista_premium_card" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="26.0dip">
+                        <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="16.0dip" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PROPIEDADES BÁSICAS" android:layout_marginStart="9.0dip" android:letterSpacing="0.11" />
+                        <View android:background="#ff50441e" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="6.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Posición X" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editPosicionToqueX" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="1632" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberSigned" />
+                    </LinearLayout>
+                    <View android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Posición Y" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editPosicionToqueY" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="351" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberSigned" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_vista_premium_card" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="26.0dip">
+                        <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="16.0dip" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MODO DE ACCIÓN" android:layout_marginStart="9.0dip" android:letterSpacing="0.11" />
+                        <View android:background="#ff50441e" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="6.0dip">
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:gravity="center" android:id="@id/btnModoToque" android:background="@drawable/bg_vista_premium_field" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="38.0dip" android:text="ÚNICO" android:layout_weight="1.0" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffececec" android:gravity="center" android:id="@id/btnModoAvanzadoToque" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="38.0dip" android:text="AVANZADO" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/groupTiempoUnicoToque" android:background="@drawable/bg_vista_premium_card" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="26.0dip">
+                        <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="16.0dip" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AJUSTES DE TIEMPO" android:layout_marginStart="9.0dip" android:letterSpacing="0.11" />
+                        <View android:background="#ff50441e" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginTop="6.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Duración del toque (ms)" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editDuracionToque" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="45" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/groupToqueAvanzado" android:background="@drawable/bg_vista_premium_card" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="26.0dip">
+                        <View android:background="#ffffd21a" android:layout_width="3.0dip" android:layout_height="16.0dip" />
+                        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffd21a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TOQUE AVANZADO" android:layout_marginStart="9.0dip" android:letterSpacing="0.11" />
+                        <View android:background="#ff50441e" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                    </LinearLayout>
+                    <RadioGroup android:orientation="vertical" android:id="@id/grupoSeleccionToqueAvanzado" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:checkedButton="@id/switchTurboToque">
+                        <RadioButton android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:gravity="center_vertical" android:id="@id/switchTurboToque" android:layout_width="fill_parent" android:layout_height="46.0dip" android:checked="true" android:text="CONTINUO" android:buttonTint="#ffffd21a" />
+                        <RadioButton android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:gravity="center_vertical" android:id="@id/switchRafagaToque" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="MULTITOQUE" android:buttonTint="#ffffd21a" />
+                    </RadioGroup>
+                    <View android:background="#ff303030" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/groupRafagaToque" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Cantidad de toques" android:layout_weight="1.0" />
+                            <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editCantidadToques" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="7" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="number" />
+                        </LinearLayout>
+                        <View android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffececec" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Velocidad de toque (ms)" android:layout_weight="1.0" />
+                        <EditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editVelocidadToque" android:background="@drawable/bg_vista_premium_field" android:layout_width="104.0dip" android:layout_height="36.0dip" android:text="5" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="number" />
+                    </LinearLayout>
+                    <TextView android:textSize="9.0sp" android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Menos milisegundos = mayor velocidad." />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@drawable/bg_gold_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ff11100f" android:layout_width="fill_parent" android:layout_height="64.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff101010" android:gravity="center" android:id="@id/btnCancelarToque" android:background="@drawable/bg_view_button_white" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="CANCELAR" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" android:letterSpacing="0.08" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff101010" android:gravity="center" android:id="@id/btnAplicarToque" android:background="@drawable/bg_view_button_gold" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="APLICAR" android:layout_weight="1.0" android:layout_marginStart="6.0dip" android:letterSpacing="0.08" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

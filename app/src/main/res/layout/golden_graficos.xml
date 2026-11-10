@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/GoldenCenterBody">
+        <com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout android:background="#b2292e32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shark_settings_gxd_dimen_20">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/golden_graphics_diagnostics" android:background="@color/shark_settings_selector_setting_click" android:paddingTop="18.909973dip" android:paddingBottom="18.909973dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.549988dip" android:paddingStart="23.0dip" android:paddingEnd="23.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:ellipsize="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Diagnóstico Stretch" android:maxLines="3" style="@style/shark_settings_ir4sitemviewtitle" />
+                        <TextView android:id="@id/golden_graphics_diagnostics_status" android:text="Lectura del estado, journal y reconexión" android:accessibilityLiveRegion="polite" style="@style/GoldenCenterSecondary" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shark_settings_gxd_ic_arrow_on_list" android:importantForAccessibility="no" android:layout_marginStart="18.0dip" />
+                </LinearLayout>
+                <View android:layout_alignParentBottom="true" style="@style/shark_settings_settings_line" />
+            </RelativeLayout>
+        </com.TryJeanPc.goldenmouse.sharksettings.CardRelativeLayout>
+        <TextView android:text="El diagnóstico no cambia la pantalla. Los ajustes Golden Stretch y BLUE MAGIC siguen disponibles en el panel flotante del juego." style="@style/GoldenCenterSecondary" />
+    </LinearLayout>
+</ScrollView>
