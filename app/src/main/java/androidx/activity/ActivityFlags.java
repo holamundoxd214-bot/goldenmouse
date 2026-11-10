@@ -1,0 +1,18 @@
+package androidx.activity;
+
+import kotlin.Metadata;
+
+@Metadata(d1={"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000B\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u0012\u0010\u0004\u001A\u00020\u00058\u0006@\u0006X\u0087\u000E¢\u0006\u0002\n\u0000¨\u0006\u0006"}, d2={"Landroidx/activity/ActivityFlags;", "", "<init>", "()V", "isOnBackPressedLifecycleOrderMaintained", "", "activity"}, k=1, mv={2, 1, 0}, xi=0x30) public final class ActivityFlags {
+    public static final ActivityFlags INSTANCE;
+    public static boolean isOnBackPressedLifecycleOrderMaintained;
+
+    static {
+        ActivityFlags.INSTANCE = new ActivityFlags();
+        ActivityFlags.isOnBackPressedLifecycleOrderMaintained = true;
+    }
+
+    private ActivityFlags() {
+        super();
+    }
+}
+
