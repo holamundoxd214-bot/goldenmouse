@@ -1,0 +1,20 @@
+package androidx.compose.ui.text.font;
+
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.collections.ArraysKt;
+
+@Metadata(d1={"\u0000\u001E\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u001A\u0016\u0010\u0000\u001A\u00020\u00012\f\u0010\u0002\u001A\b\u0012\u0004\u0012\u00020\u00040\u0003H\u0007\u001A!\u0010\u0000\u001A\u00020\u00012\u0012\u0010\u0002\u001A\n\u0012\u0006\b\u0001\u0012\u00020\u00040\u0005\"\u00020\u0004H\u0007¢\u0006\u0002\u0010\u0006\u001A\u0010\u0010\u0000\u001A\u00020\u00012\u0006\u0010\u0007\u001A\u00020\bH\u0007¨\u0006\t"}, d2={"FontFamily", "Landroidx/compose/ui/text/font/FontFamily;", "fonts", "", "Landroidx/compose/ui/text/font/Font;", "", "([Landroidx/compose/ui/text/font/Font;)Landroidx/compose/ui/text/font/FontFamily;", "typeface", "Landroidx/compose/ui/text/font/Typeface;", "ui-text"}, k=2, mv={2, 0, 0}, xi=0x30) public final class FontFamilyKt {
+    public static final FontFamily FontFamily(Typeface arg1) {
+        return new LoadedFontFamily(arg1);
+    }
+
+    public static final FontFamily FontFamily(List arg1) {
+        return new FontListFontFamily(arg1);
+    }
+
+    public static final FontFamily FontFamily(Font[] arg1) {
+        return new FontListFontFamily(ArraysKt.asList(((Object[])arg1)));
+    }
+}
+

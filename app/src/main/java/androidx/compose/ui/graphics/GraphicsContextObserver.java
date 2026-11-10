@@ -1,0 +1,32 @@
+package androidx.compose.ui.graphics;
+
+import androidx.compose.runtime.RememberObserver;
+import androidx.compose.ui.graphics.layer.GraphicsLayer;
+import kotlin.Metadata;
+
+@Metadata(d1={"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0003\b\u0002\u0018\u00002\u00020\u0001B\u000F\u0012\u0006\u0010\u0002\u001A\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\n\u001A\u00020\u000BH\u0016J\b\u0010\f\u001A\u00020\u000BH\u0016J\b\u0010\r\u001A\u00020\u000BH\u0016R\u000E\u0010\u0002\u001A\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0006\u001A\u00020\u0007¢\u0006\b\n\u0000\u001A\u0004\b\b\u0010\t¨\u0006\u000E"}, d2={"Landroidx/compose/ui/graphics/GraphicsContextObserver;", "Landroidx/compose/runtime/RememberObserver;", "graphicsContext", "Landroidx/compose/ui/graphics/GraphicsContext;", "<init>", "(Landroidx/compose/ui/graphics/GraphicsContext;)V", "graphicsLayer", "Landroidx/compose/ui/graphics/layer/GraphicsLayer;", "getGraphicsLayer", "()Landroidx/compose/ui/graphics/layer/GraphicsLayer;", "onRemembered", "", "onForgotten", "onAbandoned", "ui"}, k=1, mv={2, 0, 0}, xi=0x30) final class GraphicsContextObserver implements RememberObserver {
+    private final GraphicsContext graphicsContext;
+    private final GraphicsLayer graphicsLayer;
+
+    public GraphicsContextObserver(GraphicsContext arg1) {
+        super();
+        this.graphicsContext = arg1;
+        this.graphicsLayer = arg1.createGraphicsLayer();
+    }
+
+    public final GraphicsLayer getGraphicsLayer() {
+        return this.graphicsLayer;
+    }
+
+    public void onAbandoned() {
+        this.graphicsContext.releaseGraphicsLayer(this.graphicsLayer);
+    }
+
+    public void onForgotten() {
+        this.graphicsContext.releaseGraphicsLayer(this.graphicsLayer);
+    }
+
+    public void onRemembered() {
+    }
+}
+

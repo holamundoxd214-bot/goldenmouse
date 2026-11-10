@@ -1,0 +1,82 @@
+package androidx.compose.material.icons.sharp;
+
+import androidx.compose.material.icons.Icons$Sharp;
+import androidx.compose.ui.graphics.Brush;
+import androidx.compose.ui.graphics.Color;
+import androidx.compose.ui.graphics.SolidColor;
+import androidx.compose.ui.graphics.StrokeCap;
+import androidx.compose.ui.graphics.StrokeJoin;
+import androidx.compose.ui.graphics.vector.ImageVector$Builder;
+import androidx.compose.ui.graphics.vector.ImageVector;
+import androidx.compose.ui.graphics.vector.PathBuilder;
+import androidx.compose.ui.graphics.vector.VectorKt;
+import androidx.compose.ui.unit.Dp;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(d1={"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001A\u0004\u0018\u00010\u0001X\u0082\u000E¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001A\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001A\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2={"_typeSpecimen", "Landroidx/compose/ui/graphics/vector/ImageVector;", "TypeSpecimen", "Landroidx/compose/material/icons/Icons$Sharp;", "getTypeSpecimen", "(Landroidx/compose/material/icons/Icons$Sharp;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, k=2, mv={1, 8, 0}, xi=0x30) public final class TypeSpecimenKt {
+    private static ImageVector _typeSpecimen;
+
+    static {
+    }
+
+    public static final ImageVector getTypeSpecimen(Sharp arg22) {
+        ImageVector v0 = TypeSpecimenKt._typeSpecimen;
+        if(v0 != null) {
+            Intrinsics.checkNotNull(v0);
+            return v0;
+        }
+
+        Builder v1 = new Builder("Sharp.TypeSpecimen", Dp.constructor-impl(24f), Dp.constructor-impl(24f), 24f, 24f, 0, 0, false, 0x60, null);
+        int v3 = VectorKt.getDefaultFillType();
+        SolidColor v5 = new SolidColor(Color.Companion.getBlack-0d7_KjU(), null);
+        int v10 = StrokeCap.Companion.getButt-KaPHkGw();
+        int v11 = StrokeJoin.Companion.getBevel-LxFBmk8();
+        PathBuilder v0_1 = new PathBuilder();
+        v0_1.moveTo(4f, 6f);
+        v0_1.lineToRelative(-2f, 0f);
+        v0_1.lineToRelative(0f, 16f);
+        v0_1.lineToRelative(16f, 0f);
+        v0_1.lineToRelative(0f, -2f);
+        v0_1.lineToRelative(-14f, 0f);
+        v0_1.close();
+        Builder.addPath-oIyEayM$default(v1, v0_1.getNodes(), v3, "", ((Brush)v5), 1f, null, 1f, 1f, v10, v11, 1f, 0f, 0f, 0f, 0x3800, null);
+        v3 = VectorKt.getDefaultFillType();
+        v5 = new SolidColor(Color.Companion.getBlack-0d7_KjU(), null);
+        v10 = StrokeCap.Companion.getButt-KaPHkGw();
+        v11 = StrokeJoin.Companion.getBevel-LxFBmk8();
+        PathBuilder v2 = new PathBuilder();
+        v2.moveTo(22f, 2f);
+        v2.horizontalLineTo(6f);
+        v2.verticalLineToRelative(16f);
+        v2.horizontalLineToRelative(16f);
+        v2.verticalLineTo(2f);
+        v2.close();
+        v2.moveTo(16.629999f, 14.5f);
+        v2.lineToRelative(-0.8f, -2.3f);
+        v2.horizontalLineToRelative(-3.63f);
+        v2.lineToRelative(-0.82f, 2.3f);
+        v2.horizontalLineTo(9.81f);
+        v2.lineToRelative(3.38f, -9f);
+        v2.horizontalLineToRelative(1.61f);
+        v2.lineToRelative(3.38f, 9f);
+        v2.horizontalLineTo(16.629999f);
+        v2.close();
+        Builder.addPath-oIyEayM$default(v1, v2.getNodes(), v3, "", ((Brush)v5), 1f, null, 1f, 1f, v10, v11, 1f, 0f, 0f, 0f, 0x3800, null);
+        v3 = VectorKt.getDefaultFillType();
+        v5 = new SolidColor(Color.Companion.getBlack-0d7_KjU(), null);
+        v10 = StrokeCap.Companion.getButt-KaPHkGw();
+        v11 = StrokeJoin.Companion.getBevel-LxFBmk8();
+        v0_1 = new PathBuilder();
+        v0_1.moveTo(13.96f, 7.17f);
+        v0_1.lineToRelative(-1.31f, 3.72f);
+        v0_1.lineToRelative(2.69f, 0f);
+        v0_1.lineToRelative(-1.3f, -3.72f);
+        v0_1.close();
+        v0 = Builder.addPath-oIyEayM$default(v1, v0_1.getNodes(), v3, "", ((Brush)v5), 1f, null, 1f, 1f, v10, v11, 1f, 0f, 0f, 0f, 0x3800, null).build();
+        TypeSpecimenKt._typeSpecimen = v0;
+        Intrinsics.checkNotNull(v0);
+        return v0;
+    }
+}
+

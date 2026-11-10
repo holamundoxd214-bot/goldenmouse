@@ -1,0 +1,16 @@
+package androidx.compose.foundation.text.input.internal.selection;
+
+import androidx.compose.ui.geometry.Offset;
+import kotlin.jvm.functions.Function1;
+
+public final class TextFieldSelectionState$cursorHandleGestures$2$3$$ExternalSyntheticLambda0 implements Function1 {
+    public TextFieldSelectionState$cursorHandleGestures$2$3$$ExternalSyntheticLambda0(TextFieldSelectionState arg1) {
+        super();
+        this.f$0 = arg1;
+    }
+
+    public final Object invoke(Object arg1) {
+        return androidx.compose.foundation.text.input.internal.selection.TextFieldSelectionState$cursorHandleGestures$2$3.invokeSuspend$lambda$0(this.f$0, ((Offset)arg1));
+    }
+}
+

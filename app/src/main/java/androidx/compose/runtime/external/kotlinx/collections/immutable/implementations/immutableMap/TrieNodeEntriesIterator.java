@@ -1,0 +1,27 @@
+package androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap;
+
+import androidx.compose.runtime.external.kotlinx.collections.immutable.internal.CommonFunctionsKt;
+import java.util.Map$Entry;
+import kotlin.Metadata;
+
+@Metadata(d1={"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010&\n\u0002\b\u0004\b\u0001\u0018\u0000*\u0006\b\u0000\u0010\u0001 \u0001*\u0006\b\u0001\u0010\u0002 \u00012 \u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u0002\u0012\u0010\u0012\u000E\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u00040\u0003B\u0007¢\u0006\u0004\b\u0005\u0010\u0006J\u0015\u0010\u0007\u001A\u000E\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0004H\u0096\u0002¨\u0006\b"}, d2={"Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeEntriesIterator;", "K", "V", "Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeBaseIterator;", "", "<init>", "()V", "next", "runtime"}, k=1, mv={2, 1, 0}, xi=0x30) public final class TrieNodeEntriesIterator extends TrieNodeBaseIterator {
+    public static final int $stable = 8;
+
+    static {
+    }
+
+    public TrieNodeEntriesIterator() {
+        super();
+    }
+
+    public Object next() {
+        return this.next();
+    }
+
+    public Map$Entry next() {
+        CommonFunctionsKt.assert(this.hasNextKey());
+        this.setIndex(this.getIndex() + 2);
+        return new MapEntry(this.getBuffer()[this.getIndex() - 2], this.getBuffer()[this.getIndex() - 1]);
+    }
+}
+

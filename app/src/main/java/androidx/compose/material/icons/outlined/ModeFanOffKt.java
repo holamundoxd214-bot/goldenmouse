@@ -1,0 +1,108 @@
+package androidx.compose.material.icons.outlined;
+
+import androidx.compose.material.icons.Icons$Outlined;
+import androidx.compose.ui.graphics.Brush;
+import androidx.compose.ui.graphics.Color;
+import androidx.compose.ui.graphics.SolidColor;
+import androidx.compose.ui.graphics.StrokeCap;
+import androidx.compose.ui.graphics.StrokeJoin;
+import androidx.compose.ui.graphics.vector.ImageVector$Builder;
+import androidx.compose.ui.graphics.vector.ImageVector;
+import androidx.compose.ui.graphics.vector.PathBuilder;
+import androidx.compose.ui.graphics.vector.VectorKt;
+import androidx.compose.ui.unit.Dp;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(d1={"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001A\u0004\u0018\u00010\u0001X\u0082\u000E¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001A\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001A\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2={"_modeFanOff", "Landroidx/compose/ui/graphics/vector/ImageVector;", "ModeFanOff", "Landroidx/compose/material/icons/Icons$Outlined;", "getModeFanOff", "(Landroidx/compose/material/icons/Icons$Outlined;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, k=2, mv={1, 8, 0}, xi=0x30) public final class ModeFanOffKt {
+    private static ImageVector _modeFanOff;
+
+    static {
+    }
+
+    public static final ImageVector getModeFanOff(Outlined arg19) {
+        ImageVector v0 = ModeFanOffKt._modeFanOff;
+        if(v0 != null) {
+            Intrinsics.checkNotNull(v0);
+            return v0;
+        }
+
+        Builder v1 = new Builder("Outlined.ModeFanOff", Dp.constructor-impl(24f), Dp.constructor-impl(24f), 24f, 24f, 0, 0, false, 0x60, null);
+        int v3 = VectorKt.getDefaultFillType();
+        SolidColor v5 = new SolidColor(Color.Companion.getBlack-0d7_KjU(), null);
+        int v10 = StrokeCap.Companion.getButt-KaPHkGw();
+        int v11 = StrokeJoin.Companion.getBevel-LxFBmk8();
+        PathBuilder v12 = new PathBuilder();
+        v12.moveTo(18f, 8f);
+        v12.curveToRelative(-1.06f, 0f, -1.64f, 0.29f, -3.91f, 1.19f);
+        v12.curveToRelative(-0.19f, -0.14f, -0.4f, -0.27f, -0.62f, -0.37f);
+        v12.curveToRelative(0.25f, -1.03f, 0.61f, -1.53f, 1.33f, -2.04f);
+        v12.curveTo(15.61f, 6.21f, 16f, 5.44f, 16f, 4.5f);
+        v12.curveTo(16f, 3.28f, 15.05f, 2f, 13.4f, 2f);
+        v12.curveToRelative(-3.08f, 0f, -4.92f, 1.47f, -5.32f, 3.26f);
+        v12.lineToRelative(2.33f, 2.33f);
+        v12.curveTo(10.07f, 6.69f, 10f, 6.38f, 10f, 6f);
+        v12.curveToRelative(0f, -1.18f, 1.4f, -2f, 3.4f, -2f);
+        v12.curveTo(13.97f, 4f, 14f, 4.42f, 14f, 4.5f);
+        v12.curveToRelative(0f, 0.27f, -0.05f, 0.43f, -0.35f, 0.65f);
+        v12.curveToRelative(-1.27f, 0.9f, -1.83f, 1.91f, -2.16f, 3.39f);
+        v12.lineToRelative(-0.02f, 0.1f);
+        v12.lineToRelative(7.25f, 7.25f);
+        v12.curveTo(18.959999f, 15.95f, 19.219999f, 16f, 19.5f, 16f);
+        v12.curveToRelative(1.22f, 0f, 2.5f, -0.95f, 2.5f, -2.6f);
+        v12.curveTo(22f, 9.91f, 20.110001f, 8f, 18f, 8f);
+        v12.close();
+        v12.moveTo(19.5f, 14f);
+        v12.curveToRelative(-0.27f, 0f, -0.43f, -0.05f, -0.65f, -0.35f);
+        v12.curveToRelative(-0.9f, -1.27f, -1.91f, -1.83f, -3.39f, -2.16f);
+        v12.curveToRelative(-0.03f, -0.22f, -0.08f, -0.42f, -0.15f, -0.62f);
+        v12.curveTo(17.110001f, 10.12f, 17.49f, 10f, 18f, 10f);
+        v12.curveToRelative(1.18f, 0f, 2f, 1.4f, 2f, 3.4f);
+        v12.curveTo(20f, 13.97f, 19.58f, 14f, 19.5f, 14f);
+        v12.close();
+        Builder.addPath-oIyEayM$default(v1, v12.getNodes(), v3, "", ((Brush)v5), 1f, null, 1f, 1f, v10, v11, 1f, 0f, 0f, 0f, 0x3800, null);
+        v3 = VectorKt.getDefaultFillType();
+        v5 = new SolidColor(Color.Companion.getBlack-0d7_KjU(), null);
+        v10 = StrokeCap.Companion.getButt-KaPHkGw();
+        v11 = StrokeJoin.Companion.getBevel-LxFBmk8();
+        v12 = new PathBuilder();
+        v12.moveTo(1.39f, 4.22f);
+        v12.lineToRelative(3.89f, 3.89f);
+        v12.curveTo(5.04f, 8.05f, 4.78f, 8f, 4.5f, 8f);
+        v12.curveTo(3.28f, 8f, 2f, 8.95f, 2f, 10.6f);
+        v12.curveTo(2f, 14.09f, 3.89f, 16f, 6f, 16f);
+        v12.curveToRelative(1.06f, 0f, 1.64f, -0.29f, 3.91f, -1.19f);
+        v12.curveToRelative(0.19f, 0.14f, 0.4f, 0.27f, 0.62f, 0.37f);
+        v12.curveToRelative(-0.25f, 1.03f, -0.61f, 1.53f, -1.33f, 2.04f);
+        v12.curveTo(8.39f, 17.790001f, 8f, 18.559999f, 8f, 19.5f);
+        v12.curveToRelative(0f, 1.22f, 0.95f, 2.5f, 2.6f, 2.5f);
+        v12.curveToRelative(3.08f, 0f, 4.92f, -1.47f, 5.32f, -3.26f);
+        v12.lineToRelative(3.86f, 3.86f);
+        v12.lineToRelative(1.41f, -1.41f);
+        v12.lineTo(2.81f, 2.81f);
+        v12.lineTo(1.39f, 4.22f);
+        v12.close();
+        v12.moveTo(12.52f, 15.46f);
+        v12.curveToRelative(0.03f, 0f, 0.06f, -0.02f, 0.09f, -0.02f);
+        v12.lineToRelative(0.97f, 0.97f);
+        v12.curveTo(13.93f, 17.309999f, 14f, 17.620001f, 14f, 18f);
+        v12.curveToRelative(0f, 1.18f, -1.4f, 2f, -3.4f, 2f);
+        v12.curveToRelative(-0.57f, 0f, -0.6f, -0.42f, -0.6f, -0.5f);
+        v12.curveToRelative(0f, -0.27f, 0.05f, -0.43f, 0.35f, -0.65f);
+        v12.curveTo(11.63f, 17.959999f, 12.18f, 16.940001f, 12.52f, 15.46f);
+        v12.close();
+        v12.moveTo(8.54f, 12.52f);
+        v12.curveToRelative(0.03f, 0.22f, 0.08f, 0.42f, 0.15f, 0.62f);
+        v12.curveTo(6.89f, 13.88f, 6.51f, 14f, 6f, 14f);
+        v12.curveToRelative(-1.18f, 0f, -2f, -1.4f, -2f, -3.4f);
+        v12.curveTo(4f, 10.03f, 4.42f, 10f, 4.5f, 10f);
+        v12.curveToRelative(0.27f, 0f, 0.43f, 0.05f, 0.65f, 0.35f);
+        v12.curveTo(6.04f, 11.63f, 7.06f, 12.18f, 8.54f, 12.52f);
+        v12.close();
+        v0 = Builder.addPath-oIyEayM$default(v1, v12.getNodes(), v3, "", ((Brush)v5), 1f, null, 1f, 1f, v10, v11, 1f, 0f, 0f, 0f, 0x3800, null).build();
+        ModeFanOffKt._modeFanOff = v0;
+        Intrinsics.checkNotNull(v0);
+        return v0;
+    }
+}
+
