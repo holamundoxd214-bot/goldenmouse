@@ -1,0 +1,95 @@
+package org.bouncycastle.asn1.cmp;
+
+import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.bouncycastle.asn1.crmf.CRMFObjectIdentifiers;
+import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
+import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
+
+public interface CMPObjectIdentifiers {
+    public static final ASN1ObjectIdentifier ct_encKeyWithID;
+    public static final ASN1ObjectIdentifier dhBasedMac;
+    public static final ASN1ObjectIdentifier id_it;
+    public static final ASN1ObjectIdentifier id_it_caCerts;
+    public static final ASN1ObjectIdentifier id_it_certProfile;
+    public static final ASN1ObjectIdentifier id_it_certReqTemplate;
+    public static final ASN1ObjectIdentifier id_it_crlStatusList;
+    public static final ASN1ObjectIdentifier id_it_crls;
+    public static final ASN1ObjectIdentifier id_it_rootCaCert;
+    public static final ASN1ObjectIdentifier id_it_rootCaKeyUpdate;
+    public static final ASN1ObjectIdentifier id_pkip;
+    public static final ASN1ObjectIdentifier id_regCtrl;
+    public static final ASN1ObjectIdentifier id_regCtrl_algId;
+    public static final ASN1ObjectIdentifier id_regCtrl_rsaKeyLen;
+    public static final ASN1ObjectIdentifier id_regInfo;
+    public static final ASN1ObjectIdentifier it_caKeyUpdateInfo;
+    public static final ASN1ObjectIdentifier it_caProtEncCert;
+    public static final ASN1ObjectIdentifier it_confirmWaitTime;
+    public static final ASN1ObjectIdentifier it_currentCRL;
+    public static final ASN1ObjectIdentifier it_encKeyPairTypes;
+    public static final ASN1ObjectIdentifier it_implicitConfirm;
+    public static final ASN1ObjectIdentifier it_keyPairParamRep;
+    public static final ASN1ObjectIdentifier it_keyPairParamReq;
+    public static final ASN1ObjectIdentifier it_origPKIMessage;
+    public static final ASN1ObjectIdentifier it_preferredSymAlg;
+    public static final ASN1ObjectIdentifier it_revPassphrase;
+    public static final ASN1ObjectIdentifier it_signKeyPairTypes;
+    public static final ASN1ObjectIdentifier it_suppLangTags;
+    public static final ASN1ObjectIdentifier it_unsupportedOIDs;
+    public static final ASN1ObjectIdentifier kemBasedMac;
+    public static final ASN1ObjectIdentifier passwordBasedMac;
+    public static final ASN1ObjectIdentifier regCtrl_altCertTemplate;
+    public static final ASN1ObjectIdentifier regCtrl_authenticator;
+    public static final ASN1ObjectIdentifier regCtrl_oldCertID;
+    public static final ASN1ObjectIdentifier regCtrl_pkiArchiveOptions;
+    public static final ASN1ObjectIdentifier regCtrl_pkiPublicationInfo;
+    public static final ASN1ObjectIdentifier regCtrl_protocolEncrKey;
+    public static final ASN1ObjectIdentifier regCtrl_regToken;
+    public static final ASN1ObjectIdentifier regInfo_certReq;
+    public static final ASN1ObjectIdentifier regInfo_utf8Pairs;
+
+    static {
+        CMPObjectIdentifiers.passwordBasedMac = CRMFObjectIdentifiers.passwordBasedMac;
+        CMPObjectIdentifiers.kemBasedMac = MiscObjectIdentifiers.entrust.branch("66.16");
+        CMPObjectIdentifiers.dhBasedMac = MiscObjectIdentifiers.entrust.branch("66.30");
+        ASN1ObjectIdentifier v0 = X509ObjectIdentifiers.id_pkix.branch("4");
+        CMPObjectIdentifiers.id_it = v0;
+        CMPObjectIdentifiers.it_caProtEncCert = v0.branch("1");
+        CMPObjectIdentifiers.it_signKeyPairTypes = v0.branch("2");
+        CMPObjectIdentifiers.it_encKeyPairTypes = v0.branch("3");
+        CMPObjectIdentifiers.it_preferredSymAlg = v0.branch("4");
+        CMPObjectIdentifiers.it_caKeyUpdateInfo = v0.branch("5");
+        CMPObjectIdentifiers.it_currentCRL = v0.branch("6");
+        CMPObjectIdentifiers.it_unsupportedOIDs = v0.branch("7");
+        CMPObjectIdentifiers.it_keyPairParamReq = v0.branch("10");
+        CMPObjectIdentifiers.it_keyPairParamRep = v0.branch("11");
+        CMPObjectIdentifiers.it_revPassphrase = v0.branch("12");
+        CMPObjectIdentifiers.it_implicitConfirm = v0.branch("13");
+        CMPObjectIdentifiers.it_confirmWaitTime = v0.branch("14");
+        CMPObjectIdentifiers.it_origPKIMessage = v0.branch("15");
+        CMPObjectIdentifiers.it_suppLangTags = v0.branch("16");
+        CMPObjectIdentifiers.id_it_caCerts = v0.branch("17");
+        CMPObjectIdentifiers.id_it_rootCaKeyUpdate = v0.branch("18");
+        CMPObjectIdentifiers.id_it_certReqTemplate = v0.branch("19");
+        CMPObjectIdentifiers.id_it_rootCaCert = v0.branch("20");
+        CMPObjectIdentifiers.id_it_certProfile = v0.branch("21");
+        CMPObjectIdentifiers.id_it_crlStatusList = v0.branch("22");
+        CMPObjectIdentifiers.id_it_crls = v0.branch("23");
+        CMPObjectIdentifiers.id_pkip = CRMFObjectIdentifiers.id_pkip;
+        v0 = CRMFObjectIdentifiers.id_regCtrl;
+        CMPObjectIdentifiers.id_regCtrl = v0;
+        CMPObjectIdentifiers.id_regInfo = CRMFObjectIdentifiers.id_regInfo;
+        CMPObjectIdentifiers.regCtrl_regToken = CRMFObjectIdentifiers.id_regCtrl_regToken;
+        CMPObjectIdentifiers.regCtrl_authenticator = CRMFObjectIdentifiers.id_regCtrl_authenticator;
+        CMPObjectIdentifiers.regCtrl_pkiPublicationInfo = CRMFObjectIdentifiers.id_regCtrl_pkiPublicationInfo;
+        CMPObjectIdentifiers.regCtrl_pkiArchiveOptions = CRMFObjectIdentifiers.id_regCtrl_pkiArchiveOptions;
+        CMPObjectIdentifiers.regCtrl_oldCertID = CRMFObjectIdentifiers.id_regCtrl_oldCertID;
+        CMPObjectIdentifiers.regCtrl_protocolEncrKey = CRMFObjectIdentifiers.id_regCtrl_protocolEncrKey;
+        CMPObjectIdentifiers.regCtrl_altCertTemplate = v0.branch("7");
+        CMPObjectIdentifiers.id_regCtrl_algId = v0.branch("11");
+        CMPObjectIdentifiers.id_regCtrl_rsaKeyLen = v0.branch("12");
+        CMPObjectIdentifiers.regInfo_utf8Pairs = CRMFObjectIdentifiers.id_regInfo_utf8Pairs;
+        CMPObjectIdentifiers.regInfo_certReq = CRMFObjectIdentifiers.id_regInfo_certReq;
+        CMPObjectIdentifiers.ct_encKeyWithID = CRMFObjectIdentifiers.id_ct_encKeyWithID;
+    }
+}
+
