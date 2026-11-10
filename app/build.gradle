@@ -83,6 +83,13 @@ dependencies {
     // KADB (si lo encuentras disponible, sino comenta esta línea)
     // implementation 'com.flyfishxu:kadb:1.0.0'
 
+    // SDP/SSP dimension libraries
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
+    // Kotlin Serialization
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2'
+
     // OkIO
     implementation 'com.squareup.okio:okio:3.6.0'
 
