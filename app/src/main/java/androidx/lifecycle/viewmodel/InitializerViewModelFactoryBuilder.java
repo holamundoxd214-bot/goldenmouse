@@ -1,0 +1,36 @@
+package androidx.lifecycle.viewmodel;
+
+import androidx.lifecycle.ViewModelProvider$Factory;
+import androidx.lifecycle.viewmodel.internal.CanonicalName_jvmKt;
+import androidx.lifecycle.viewmodel.internal.ViewModelProviders;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+
+@ViewModelFactoryDsl @Metadata(d1={"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J7\u0010\b\u001A\u00020\t\"\b\b\u0000\u0010\n*\u00020\u000B2\f\u0010\f\u001A\b\u0012\u0004\u0012\u0002H\n0\u00062\u0017\u0010\r\u001A\u0013\u0012\u0004\u0012\u00020\u000F\u0012\u0004\u0012\u0002H\n0\u000E¢\u0006\u0002\b\u0010J\u0006\u0010\u0011\u001A\u00020\u0012R\"\u0010\u0004\u001A\u0016\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0006\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00070\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2={"Landroidx/lifecycle/viewmodel/InitializerViewModelFactoryBuilder;", "", "<init>", "()V", "initializers", "", "Lkotlin/reflect/KClass;", "Landroidx/lifecycle/viewmodel/ViewModelInitializer;", "addInitializer", "", "T", "Landroidx/lifecycle/ViewModel;", "clazz", "initializer", "Lkotlin/Function1;", "Landroidx/lifecycle/viewmodel/CreationExtras;", "Lkotlin/ExtensionFunctionType;", "build", "Landroidx/lifecycle/ViewModelProvider$Factory;", "lifecycle-viewmodel"}, k=1, mv={2, 1, 0}, xi=0x30) public final class InitializerViewModelFactoryBuilder {
+    private final Map initializers;
+
+    public InitializerViewModelFactoryBuilder() {
+        super();
+        this.initializers = new LinkedHashMap();
+    }
+
+    public final void addInitializer(KClass arg2, Function1 arg3) {
+        Intrinsics.checkNotNullParameter(arg2, "clazz");
+        Intrinsics.checkNotNullParameter(arg3, "initializer");
+        if(!this.initializers.containsKey(arg2)) {
+            this.initializers.put(arg2, new ViewModelInitializer(arg2, arg3));
+            return;
+        }
+
+        throw new IllegalArgumentException("A `initializer` with the same `clazz` has already been added: " + CanonicalName_jvmKt.getCanonicalName(arg2) + ".".toString());
+    }
+
+    public final Factory build() {
+        return ViewModelProviders.INSTANCE.createInitializerFactory$lifecycle_viewmodel(this.initializers.values());
+    }
+}
+
