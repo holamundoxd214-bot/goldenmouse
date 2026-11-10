@@ -1,0 +1,85 @@
+package kotlin.text;
+
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.ranges.IntRange;
+
+@Metadata(d1={"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000E\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\bf\u0018\u00002\u00020\u0001:\u0001\u0017J\f\u0010\u0016\u001A\u0004\u0018\u00010\u0000H¦\u0080\u0004R\u0013\u0010\u0002\u001A\u00020\u0003X¦\u0084\b¢\u0006\u0006\u001A\u0004\b\u0004\u0010\u0005R\u0013\u0010\u0006\u001A\u00020\u0007X¦\u0084\b¢\u0006\u0006\u001A\u0004\b\b\u0010\tR\u0013\u0010\n\u001A\u00020\u000BX¦\u0084\b¢\u0006\u0006\u001A\u0004\b\f\u0010\rR\u0019\u0010\u000E\u001A\b\u0012\u0004\u0012\u00020\u00070\u000FX¦\u0084\b¢\u0006\u0006\u001A\u0004\b\u0010\u0010\u0011R\u0015\u0010\u0012\u001A\u00020\u00138VX\u0096\u0084\b¢\u0006\u0006\u001A\u0004\b\u0014\u0010\u0015¨\u0006\u0018"}, d2={"Lkotlin/text/MatchResult;", "", "range", "Lkotlin/ranges/IntRange;", "getRange", "()Lkotlin/ranges/IntRange;", "value", "", "getValue", "()Ljava/lang/String;", "groups", "Lkotlin/text/MatchGroupCollection;", "getGroups", "()Lkotlin/text/MatchGroupCollection;", "groupValues", "", "getGroupValues", "()Ljava/util/List;", "destructured", "Lkotlin/text/MatchResult$Destructured;", "getDestructured", "()Lkotlin/text/MatchResult$Destructured;", "next", "Destructured", "kotlin-stdlib"}, k=1, mv={2, 3, 0}, xi=0x30) public interface MatchResult {
+    @Metadata(k=3, mv={2, 3, 0}, xi=0x30) public final class DefaultImpls {
+        public static Destructured getDestructured(MatchResult arg1) {
+            return new Destructured(arg1);
+        }
+    }
+
+    @Metadata(d1={"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000E\n\u0002\b\n\n\u0002\u0010 \n\u0000\u0018\u00002\u00020\u0001B\u0011\b@\u0012\u0006\u0010\u0002\u001A\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\n\u0010\b\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\n\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\u000B\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\f\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\r\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\u000E\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\u000F\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\u0010\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\u0011\u001A\u00020\tH\u0087\u008A\u0004J\n\u0010\u0012\u001A\u00020\tH\u0087\u008A\u0004J\u0010\u0010\u0013\u001A\b\u0012\u0004\u0012\u00020\t0\u0014H\u0086\u0080\u0004R\u0015\u0010\u0002\u001A\u00020\u0003X\u0086\u0084\b¢\u0006\b\n\u0000\u001A\u0004\b\u0006\u0010\u0007¨\u0006\u0015"}, d2={"Lkotlin/text/MatchResult$Destructured;", "", "match", "Lkotlin/text/MatchResult;", "<init>", "(Lkotlin/text/MatchResult;)V", "getMatch", "()Lkotlin/text/MatchResult;", "component1", "", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "toList", "", "kotlin-stdlib"}, k=1, mv={2, 3, 0}, xi=0x30) public final class Destructured {
+        private final MatchResult match;
+
+        public Destructured(MatchResult arg2) {
+            Intrinsics.checkNotNullParameter(arg2, "match");
+            super();
+            this.match = arg2;
+        }
+
+        private final String component1() {
+            return this.getMatch().getGroupValues().get(1);
+        }
+
+        private final String component10() {
+            return this.getMatch().getGroupValues().get(10);
+        }
+
+        private final String component2() {
+            return this.getMatch().getGroupValues().get(2);
+        }
+
+        private final String component3() {
+            return this.getMatch().getGroupValues().get(3);
+        }
+
+        private final String component4() {
+            return this.getMatch().getGroupValues().get(4);
+        }
+
+        private final String component5() {
+            return this.getMatch().getGroupValues().get(5);
+        }
+
+        private final String component6() {
+            return this.getMatch().getGroupValues().get(6);
+        }
+
+        private final String component7() {
+            return this.getMatch().getGroupValues().get(7);
+        }
+
+        private final String component8() {
+            return this.getMatch().getGroupValues().get(8);
+        }
+
+        private final String component9() {
+            return this.getMatch().getGroupValues().get(9);
+        }
+
+        public final MatchResult getMatch() {
+            return this.match;
+        }
+
+        public final List toList() {
+            return this.match.getGroupValues().subList(1, this.match.getGroupValues().size());
+        }
+    }
+
+    Destructured getDestructured();
+
+    List getGroupValues();
+
+    MatchGroupCollection getGroups();
+
+    IntRange getRange();
+
+    String getValue();
+
+    MatchResult next();
+}
+

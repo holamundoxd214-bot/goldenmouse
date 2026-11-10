@@ -1,0 +1,40 @@
+package kotlin.jvm.internal;
+
+import java.util.NoSuchElementException;
+import kotlin.Metadata;
+import kotlin.collections.BooleanIterator;
+
+@Metadata(d1={"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0018\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000B\n\u0002\b\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0011\bF\u0012\u0006\u0010\u0002\u001A\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\n\u0010\b\u001A\u00020\tH\u0096\u0082\u0004J\n\u0010\n\u001A\u00020\tH\u0096\u0080\u0004R\u000F\u0010\u0002\u001A\u00020\u0003X\u0082\u0084\b¢\u0006\u0002\n\u0000R\u000F\u0010\u0006\u001A\u00020\u0007X\u0082\u008E\b¢\u0006\u0002\n\u0000¨\u0006\u000B"}, d2={"Lkotlin/jvm/internal/ArrayBooleanIterator;", "Lkotlin/collections/BooleanIterator;", "array", "", "<init>", "([Z)V", "index", "", "hasNext", "", "nextBoolean", "kotlin-stdlib"}, k=1, mv={2, 3, 0}, xi=0x30) final class ArrayBooleanIterator extends BooleanIterator {
+    private final boolean[] array;
+    private int index;
+
+    public ArrayBooleanIterator(boolean[] arg2) {
+        Intrinsics.checkNotNullParameter(arg2, "array");
+        super();
+        this.array = arg2;
+    }
+
+    public boolean hasNext() {
+        if(this.index < this.array.length) {
+            return 1;
+        }
+
+        return 0;
+    }
+
+    public boolean nextBoolean() {
+        boolean v3;
+        try {
+            boolean[] v0_1 = this.array;
+            int v1 = this.index;
+            this.index = v1 + 1;
+            v3 = v0_1[v1];
+            return v3;
+        }
+        catch(ArrayIndexOutOfBoundsException v0) {
+            --((ArrayBooleanIterator)v3).index;
+            throw new NoSuchElementException(v0.getMessage());
+        }
+    }
+}
+
